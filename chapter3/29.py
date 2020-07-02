@@ -12,7 +12,6 @@ with open(filename,mode = 'r') as f:
 
 pattern = r'\[\[ファイル:(.+?)\|'
 result = '\n'.join(re.findall(pattern, about_uk))
-print(result)
 
 def get_url(text):
     url_file = text['国旗画像'].replace(' ', '_')
