@@ -5,4 +5,5 @@ df = pd.read_table('popular-names.txt', sep='\t', names=['name', 'sex', 'number'
 def extract(N):
     return df.head(N)
 
-print(extract(4))
+num = input("数字を入力してください:")
+print(extract(int(num)))
